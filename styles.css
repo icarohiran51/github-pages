@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #00cfff;
+  --text-color: #ffffff;
+  --background-color: #000000;
+  --font-family: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.intro {
+  flex: 1;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.intro p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 450px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.profile-pic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic img {
+  max-width: 100%;
+  border-radius: 20px;
+}
